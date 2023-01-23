@@ -34,7 +34,7 @@ func (d *Dict) set(full []byte) string {
 
 func (d *Dict) get(id int) ([]byte, error) {
 	if len(d.elems) == 0 {
-		return nil, errors.New("not found")
+		return nil, errors.New("")
 	}
 
 	el := d.elems[id]
