@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  branchtest:
+  branch test:
     runs-on: ubuntu-latest
 
     steps:
@@ -208,7 +208,7 @@ jobs:
               -binary-path=cmd/shortener/shortener \
               -server-host=$SERVER_HOST \
               -server-port=$SERVER_PORT \
-              -server-base-url="http://$SERVER_HOST:$SERVER_PORT"
+              -server-base-url="https://$SERVER_HOST:$SERVER_PORT"
 
       - name: "Code increment #6"
         if: |
